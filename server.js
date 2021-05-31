@@ -12,11 +12,6 @@ client.on('ready', () => {
   console.log("Online!")
     client.user.setStatus('available')
     client.user.setPresence({
-        game: {
-            name: 'with depression',
-            type: "STREAMING",
-            url: "https://twitch.tv/scribblehounts"
-        }
     });
 });
 
@@ -34,7 +29,7 @@ config({
 });
 
 client.on("message", async message => {
-    const prefix = "!";
+    const prefix = "k!";
 
     if (message.author.bot) return;
     if (!message.guild) return;
