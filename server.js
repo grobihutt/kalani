@@ -7,11 +7,11 @@ const { config } = require("dotenv");
 const client = new Client({
     disableEveryone: true
 })
-
 client.on('ready', () => {
   console.log("Online!")
     client.user.setStatus('available')
-    client.user.setPresence({
+    client.user.setActivity("Serving Count Dooku", {
+    
     });
 });
 
